@@ -8,6 +8,7 @@ function limpar() {
   operador = ""
 }
 
+//function para os numeros
 function add_numero(string) {
   if (!parar) {
     if (string === '.' && calculo.value.indexOf(".") === -1 || string !== '.') {
@@ -25,7 +26,7 @@ function add_numero(string) {
     }
   }
 }
-
+//function para os operadores
 function add_operador(op) {
   if (calculo.value == "") {
     calculo.value = "0";
@@ -42,6 +43,7 @@ function add_operador(op) {
   }
 }
 
+//function para os resultados
 function total() {
   if (!parar) {
     numeros = calculo.value.split(operador);
